@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:18-ea-11-alpine3.15
 MAINTAINER Xetus OSS <xetusoss@xetus.com>
 
 # Add the archiva user and group with a specific UID/GUI to ensure
