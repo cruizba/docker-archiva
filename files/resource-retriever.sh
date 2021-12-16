@@ -8,7 +8,7 @@ set -eo pipefail
 BUILD_SNAPSHOT_RELEASE=${BUILD_SNAPSHOT_RELEASE:-false}
 if [ $BUILD_SNAPSHOT_RELEASE = true ]
 then
-  ARCHIVA_SNAPSHOTS_BASE="https://archiva-repository.apache.org/archiva/repository/snapshots/org/apache/archiva/archiva-jetty/2.2.6-SNAPSHOT/"
+  ARCHIVA_SNAPSHOTS_BASE="https://archiva-repository.apache.org/archiva/repository/snapshots/org/apache/archiva/archiva-jetty/2.2.7-SNAPSHOT/"
   BUILD_NO=$(curl -s "${ARCHIVA_SNAPSHOTS_BASE}maven-metadata.xml" |\
     grep buildNumber | cut -f2 -d'>' | cut -f1 -d'<')
 
